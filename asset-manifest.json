@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cinema-convite/static/css/main.1f797f62.css",
+    "main.js": "/cinema-convite/static/js/main.de0526a3.js",
+    "static/js/453.0abff880.chunk.js": "/cinema-convite/static/js/453.0abff880.chunk.js",
+    "index.html": "/cinema-convite/index.html",
+    "main.1f797f62.css.map": "/cinema-convite/static/css/main.1f797f62.css.map",
+    "main.de0526a3.js.map": "/cinema-convite/static/js/main.de0526a3.js.map",
+    "453.0abff880.chunk.js.map": "/cinema-convite/static/js/453.0abff880.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f797f62.css",
+    "static/js/main.de0526a3.js"
+  ]
+}

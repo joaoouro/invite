@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+// src/App.js
+import React, { useState } from 'react';
+import FreeTime from './components/FreeTime';
+import ChooseMovie from './components/ChooseMovie';
+import Invitation from './components/Invitation';
 import './App.css';
 
 function App() {
+  const [step, setStep] = useState(1);
+  const [movie, setMovie] = useState(null);
+
+  const handleNextStep = (selectedMovie) => {
+    setMovie(selectedMovie);
+    setStep(step + 1);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {step === 1 && <FreeTime onContinue={() => setStep(2)} />}
+      {step === 2 && <ChooseMovie onSelectMovie={handleNextStep} />}
+      {step === 3 && <Invitation movie={movie} />}
     </div>
   );
 }
